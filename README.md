@@ -39,19 +39,21 @@ Connect LAN to the MR33. It's listening on 192.168.1.1. Now you can upload the i
 echo -e "binary\nput openwrt-ipq40xx-meraki_mr33-initramfs-fit-uImage.itb" | tftp 192.168.1.1
 ```
 
+Now wait for the MR33 to reboot.
+
 4. Upload images for later use
 
 ```
 scp openwrt-* root@192.168.1.1:/tmp
 ```
 
-5. Connect with ssh
+5. Connect with ssh and execute setup script.
 
 ```
 ssh root@192.168.1.1
+chmod +x /tmp/openwrt-mr33-setup.sh
+/tmp/openwrt-mr33-setup.sh
 ```
-
-Now wait for the MR33 to reboot.
 
 ## Credits
 
