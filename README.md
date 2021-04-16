@@ -7,6 +7,7 @@ When the installed uboot is newer than verison 2012.7 start at `./uboot2012`
 1. Connect to serial
 
 | Pin | Serial | Comment     |
+| --- | ------ | ----------- |
 | 1   |        | White Arrow |
 | 2   | Rx     |             |
 | 3   | Tx     |             |
